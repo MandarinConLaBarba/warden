@@ -37,8 +37,8 @@ bin/warden starts a new server if none is running for this service
 ### Config and runtime files
 
 ```
-file       /var/run/warden/pid
-socket     /var/run/warden/sock=
+file       /var/run/warden/warden.pid
+socket     /var/run/warden/warden.sock
 directory  /var/run/warden/services
 directory  /var/run/warden/cache
 
@@ -48,8 +48,8 @@ directory  /etc/warden
 or some local prefix, configurable
 
 ```
-./run/pid
-./run/sock=
+./run/warden.pid
+./run/warden.sock
 ./run/services
 ./run/cache
 ./etc

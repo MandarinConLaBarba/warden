@@ -1,0 +1,22 @@
+{
+  "name": "warden",
+  "version": "0.0.0",
+  "description": "Service wrapper for a 12 factor app",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "J Irving <jonathan.irving@turn.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^1.0.5",
+    "minimist": "0.0.7",
+    "underscore": "^1.6.0",
+    "mkdirp": "^0.3.5"
+  },
+  "devDependencies": {
+    "mocha": "^1.17.1",
+    "should": "^3.1.2",
+    "jshint": "^2.4.3"
+  }
+}

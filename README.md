@@ -1,13 +1,27 @@
 Warden Service Wrapper
 ======================
 
-Invocation
-----------
+Usage
+-----
 
 ```
-$ warden --name myservice --manifest /path/to/manifest start
-$ warden --name myservice --manifest /path/to/manifest stop
-$ warden --name myservice --manifest /path/to/manifest restart
+usage: warden action [options] [COMMAND [command-options]]
+
+Start "command" under warden's supervision.
+
+actions:
+  start               start COMMAND as a daemon
+  stop                stop the COMMAND daemon
+  kill                send a kill signal to the COMMAND daemon
+  restart             restart the COMMAND daemon
+  list                list processes under warden's supervision
+  die                 kill the warden server if it's running
+
+options:
+  -s, --service       service identifier
+  -p, --prefix        prefix directory for warden's runtime files
+  -k, --signal        signal to use for the kill action [default: SIGHUP]
+  -h, --help          show this text
 ```
 
 
